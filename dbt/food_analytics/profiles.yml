@@ -1,0 +1,17 @@
+food_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: TQDWDZZ-HE21714
+      
+      # User/Pass from Step 1
+      user: SVC_DATA_ENGINEER
+      password: 'NTR@sn0wflake' 
+
+      role: ACCOUNTADMIN
+      database: FOOD_SUPPLY_CHAIN
+      warehouse: COMPUTE_WH
+      schema: public
+      threads: 4
+      client_session_keep_alive: False
