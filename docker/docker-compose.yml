@@ -12,10 +12,11 @@ x-airflow-common: &x-airflow-common
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
   volumes:
-    - ../dags:/opt/airflow/dags
-    - ../logs:/opt/airflow/logs
-    - ../dbt:/opt/airflow/dbt
-    - ../src:/opt/airflow/src
+  - ../dags:/opt/airflow/dags
+  - ../logs:/opt/airflow/logs
+  - ../plugins:/opt/airflow/plugins
+  - ../dbt:/opt/airflow/dbt
+  - ../src:/opt/airflow/src
   depends_on:
     postgres:
       condition: service_healthy
