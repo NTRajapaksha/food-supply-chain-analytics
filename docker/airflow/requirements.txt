@@ -1,0 +1,9 @@
+apache-airflow-providers-snowflake
+apache-airflow-providers-microsoft-azure
+apache-airflow-providers-databricks
+dbt-snowflake
+dbt-core
+kafka-python
+pandas
+azure-storage-blob
+scikit-learn
